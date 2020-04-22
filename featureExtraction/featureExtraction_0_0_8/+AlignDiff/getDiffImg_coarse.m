@@ -1,5 +1,5 @@
 function [dy_final, dx_final, diffImg_final] =...
-    getDiffImg_coarse(RefImg, TestImg, searchRange, removeRange, cropImageDarkPart_dif, isFlat_hoz, isFlat_ver)
+    getDiffImg_coarse(RefImg, TestImg, searchRange, removeRange, cropImageDarkPart_dil, isFlat_hoz, isFlat_ver)
 
 % global medGrayValue
 medGrayValue = 127;

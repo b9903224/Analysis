@@ -114,10 +114,10 @@ dy_final_R_f0 = diff_adv0.dy_final_R;
 diff_adv2 = Image.diff_adv2;
 T_diff_true_f2 = diff_adv2.T_diff_true;
 R_diff_true_f2 = diff_adv2.R_diff_true;
-dx_f2inal_T_f2 = diff_adv2.dx_f2inal_T;
-dy_f2inal_T_f2 = diff_adv2.dy_f2inal_T;
-dx_f2inal_R_f2 = diff_adv2.dx_f2inal_R;
-dy_f2inal_R_f2 = diff_adv2.dy_f2inal_R;
+dx_final_T_f2 = diff_adv2.dx_final_T;
+dy_final_T_f2 = diff_adv2.dy_final_T;
+dx_final_R_f2 = diff_adv2.dx_final_R;
+dy_final_R_f2 = diff_adv2.dy_final_R;
 
 %%
 FlatByDir = Image.FlatByDir;
@@ -202,10 +202,10 @@ testAllImg = insertColumnString(testAllImg, text_str, yStart, xStart, rgbAry, rg
 
 %% median
 text_str = {};
-text_str = [text_str, sprintf('dx_finalt_T: %g, %.5f, %.5f, %.5f', dx_final_T_c, dx_final_T_f0, dx_final_T_f0, dx_f2inal_T_f2)];
-text_str = [text_str, sprintf('dy_finalt_T: %g, %.5f, %.5f, %.5f', dy_final_T_c, dy_final_T_f0, dy_final_T_f0, dy_f2inal_T_f2)];
-text_str = [text_str, sprintf('dx_finalt_R: %g, %.5f, %.5f, %.5f', dx_final_R_c, dx_final_R_f0, dx_final_R_f0, dx_f2inal_R_f2)];
-text_str = [text_str, sprintf('dy_finalt_R: %g, %.5f, %.5f, %.5f', dy_final_R_c, dy_final_R_f0, dy_final_R_f0, dy_f2inal_R_f2)];
+text_str = [text_str, sprintf('dx_finalt_T: %g, %.5f, %.5f, %.5f', dx_final_T_c, dx_final_T_f0, dx_final_T_f0, dx_final_T_f2)];
+text_str = [text_str, sprintf('dy_finalt_T: %g, %.5f, %.5f, %.5f', dy_final_T_c, dy_final_T_f0, dy_final_T_f0, dy_final_T_f2)];
+text_str = [text_str, sprintf('dx_finalt_R: %g, %.5f, %.5f, %.5f', dx_final_R_c, dx_final_R_f0, dx_final_R_f0, dx_final_R_f2)];
+text_str = [text_str, sprintf('dy_finalt_R: %g, %.5f, %.5f, %.5f', dy_final_R_c, dy_final_R_f0, dy_final_R_f0, dy_final_R_f2)];
 text_str = [text_str, sprintf('isFlat_hoz: %g (%g, %g, %g, %g)', isFlat_hoz, isFlat_hoz_TR, isFlat_hoz_TT, isFlat_hoz_RR, isFlat_hoz_RT)];
 text_str = [text_str, sprintf('isFlat_ver: %g (%g, %g, %g, %g)', isFlat_ver, isFlat_ver_TR, isFlat_ver_TT, isFlat_ver_RR, isFlat_ver_RT)];
 
